@@ -5,6 +5,7 @@
     position: fixed;
     bottom: 0%;
     align-items: center;
+    width: 100%;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -15,7 +16,7 @@ html{
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     margin: 0%;
 }
 header {
@@ -57,4 +58,46 @@ header {
     padding: 2.5rem;
     margin-left: 8rem;
     max-width: 30rem;
+}
+.content {
+    margin: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+}
+.content-intro {
+    height: 35vh;
+    position: relative;
+}
+.content-intro img {
+    height: 100%;
+}
+.content-intro .box {
+    background: hsl(0, 0%, 100%);
+    padding: 3rem 0 0 3rem;
+    z-index: 10;
+    width: 30rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.content-intro .box h2 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.content-intro .box p {
+    font-family: 'Alata', sans-serif;
+    color: hsl(0, 0%, 55%);
+    margin-bottom: 0;
+}
+footer {
+    margin: 3rem 8rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 }
